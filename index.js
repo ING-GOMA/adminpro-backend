@@ -18,8 +18,10 @@ app.use(express.json());
 
 //base de Datos
 dbConnection();
-//mean_user
-//S6TiM7ZJQtwUEPsr
+
+//Directorio Publico
+app.use(express.static('public'));
+
 
 //Rutas
 app.use('/api/usuarios', require('./routes/usuarios'));
